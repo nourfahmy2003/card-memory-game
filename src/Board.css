@@ -1,0 +1,26 @@
+.board {
+    display: flex; /* Align cards in a row */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center-align the cards */
+    gap: 10px; /* Add spacing between cards */
+}
+.board .top {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center-align within the parent */
+    padding-bottom: 20px; /* Space between the top section and the cards */
+    width: 100%; /* Ensure it spans the entire width */
+}
+  
+  /* The score display */
+  .score {
+    font-size: 1.2em; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    padding-right: 50px;
+  }
+  
+  /* The high score display */
+  .highscore {
+    padding-left: 50px;
+    font-size: 1.2em; /* Same as the score */
+    font-weight: bold; /* Bold text */
+  }

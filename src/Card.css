@@ -1,0 +1,56 @@
+.card {
+    perspective: 1000px; 
+    width: 200px; 
+    height: 400px; 
+    position: relative; 
+}
+
+.card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%; /* Ensure full-width */
+    height: 400px;
+    backface-visibility: hidden; /* Hide the back face when flipped */
+}
+
+.card-front {
+    background: #ccc; /* Placeholder for front face */
+}
+
+.card-back {
+    transform: rotateY(180deg); /* Flip back face to align with front */
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-repeat: no-repeat; /* Prevent repetition of the background */
+    background-position: center; /* Center the image within the card */
+    background-color: white; /* Default background color for the backside */
+}
+
+.card-front {
+    position: relative; /* Ensure the absolute positioning of the name section works */
+    background-size: cover; /* Ensure the background image covers the entire card */
+    background-repeat: no-repeat; /* Prevent repetition of the background */
+    background-position: center; /* Center the image within the card */
+}
+
+.card-name-section {
+    position: absolute; /* Make it independent of other elements' layout */
+    bottom: 0; /* Position it at the bottom of the card */
+    width:190px; /* Match the width of the card */
+    background-color: white; /* White background for contrast */
+    padding: 5px; /* Provide some space around the text */
+    text-align: center; /* Center the text horizontally */
+}
+
+.card-name {
+    color: black; /* Black text for contrast */
+    font-size: 1.2em; /* Adjust as needed */
+}

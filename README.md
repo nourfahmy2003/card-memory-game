@@ -3,7 +3,7 @@
 [![Project Live](https://img.shields.io/badge/Project-Live-brightgreen.svg)](https://card-memory-game-gold.vercel.app)
 
 ## Overview
-The **Card Memory Game** is a fun and interactive web-based memory game where players can test their memory skills by finding matching pairs of cards. The game offers three levels of difficulty, each with a different number of cards. Built with Vite and React, the game offers smooth gameplay and quick responsiveness. The project is hosted on Vercel, providing reliable deployment and scalability.
+The **Card Memory Game** is a fun and interactive web-based memory game where players can test their memory skills. The game offers three levels of difficulty, each with a different number of cards. Built with Vite and React, the game offers smooth gameplay and quick responsiveness. The project is hosted on Vercel, providing reliable deployment and scalability.
 
 ## Features
 - **Three Difficulty Levels**: Choose between Easy (4 cards), Medium (8 cards), or Hard (12 cards) for varying levels of challenge.
